@@ -1,11 +1,11 @@
 # How to release an OpenShift downstream release
 
 ## Prereq
-
 * The variable ${RELEASE} is the tekton upstream version for example `0.3.1`
 
 * You need to make sure to have your remote properly setup, one called `upstream` against [tektoncd/pipeline](https://github.com/tektoncd/pipeline) and one called `openshift` against [openshift/tektoncd-pipeline](https://github.com/openshift/tektoncd-pipeline)
 
+* `yq` [CLI tool is installed](https://mikefarah.github.io/yq/)
 ## Steps
 
 * Generate a new branch and push it to <https://github.com/openshift/tektoncd-pipeline> with this [script](https://github.com/openshift/tektoncd-pipeline/blob/master/openshift/release/create-release-branch.sh), for example like this :
